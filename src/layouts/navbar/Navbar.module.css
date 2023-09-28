@@ -1,14 +1,105 @@
+@import '../../App.css';
+
+:root{
+    --border-color:#BFBFBF;
+}
+
 .NavbarStyle{
     display: flex;
     flex-direction: row;
     place-content: space-between;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); 
     place-items: center;
     padding: 20px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
     width: auto;
 }
 
+@media (max-width: 868px) {
+    .NavbarStyle{
+        flex-direction: column;
+        gap:10px;
+    }
+}
+
 .NavbarLogo{
-    width: 90px;
+    width: 110px;
     object-fit: contain;
     height: auto;
+}
+
+.NavbarLink{
+    display: flex;
+    place-content: center;
+    min-width: 90px;
+    place-items: center;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--text-color);
+    gap: 30px;
+    cursor: pointer;
+    flex-direction: row;
+}
+
+.linksSection{
+    display: flex;
+    border-radius: 30px;
+    background-color: white;
+    gap: 40px;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0px 5px 17px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+.vr{
+    border: 1px solid var(--border-color);
+    height: 80%;
+    opacity: 0.7;
+}
+
+.lang{
+    border-radius: 100%;
+    width: 20px;
+    cursor: pointer;
+    height: 20px;
+}
+
+.endSection{
+    display: flex;
+    gap: 20px;
+    place-items: center;
+}
+
+.endSectionInner{
+    display: flex;
+    place-items: center;
+    gap: 10px;
+    flex-direction: row;
+}
+
+.borderSection{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    place-content: center;
+    place-items: center;
+    border: 1px solid var(--border-color);
+    border-radius: 30px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.cart{
+    background-color: #F9F5FF;
+    border-radius: 100%;
+    height: 25px;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 500;
+    width: 25px;
+    padding: 5px;
+    aspect-ratio: 4 / 3;
 }

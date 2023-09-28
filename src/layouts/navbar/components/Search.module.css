@@ -1,0 +1,19 @@
+@import '../../../App.css';
+
+.Search{
+    display: flex;
+    place-content: center;
+    place-items: center;
+    color: white;
+    font-weight: 500;
+    flex-direction: row;
+    gap: 10px;
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    padding: 8px 15px 8px 15px;
+}
+
+
+.searchIcon{
+    fill: white;
+}

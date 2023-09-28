@@ -1,0 +1,12 @@
+.textbutton{
+    background-color: transparent;
+    border: hidden;
+    height: fit-content;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+:hover.textbutton{
+    color: var(--primary-color);
+}

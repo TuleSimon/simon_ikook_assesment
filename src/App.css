@@ -1,3 +1,11 @@
+:root{
+  --text-color:#242423;
+  --text-color-light:#676664;
+  --primary-color:#FCC01C;
+  --primary-color_light:#FDEEC5;
+}
+
+
 .App {
   text-align: center;
   width: 100vw;
@@ -37,4 +45,119 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.container {
+  width: 100%;
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Media query for screens 640px wide or larger (sm) */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* Media query for screens 768px wide or larger (md) */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* Media query for screens 1024px wide or larger (lg) */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* Media query for screens 1280px wide or larger (xl) */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* Media query for screens 1536px wide or larger (2xl) */
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+.flex{
+  display: flex;
+  place-content: center;
+  place-items: center;
+}
+
+
+.rounded{
+  border-radius: 20px;
+}
+
+.body{ /* Start at normal size */
+  transition: all 0.5s ease;
+}
+
+.flex{
+  display: flex;
+}
+
+.flex-col{
+  flex-direction: column;
+  place-items: start;
+}
+
+.mt-2{
+  margin-top: 30px;
+}
+
+h1{
+  font-weight: 700;
+  line-height: 0px;
+  margin-bottom: 0px;
+  text-align: start;
+}
+
+.textSmall{
+  font-size: 16px;
+  color: var(--text-color-light);
+}
+
+.gap-2{
+gap: 5px;
+}
+
+.gap-4{
+  gap: 10px;
+  }
+
+.colorPrimary{
+  color: var(--primary-color);
+}
+
+
+.filledButtonLight{
+  background-color: var(--primary-color_light);
+  display: flex;
+  place-items: center;
+  gap: 8px;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 20px;
+}
+
+.between{
+  display: flex;
+  flex-direction: row;
+  place-content: space-between;
+}
+
+.w-full{
+  width: 100%;
 }
