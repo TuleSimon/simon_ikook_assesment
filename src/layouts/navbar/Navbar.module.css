@@ -1,0 +1,14 @@
+.NavbarStyle{
+    display: flex;
+    flex-direction: row;
+    place-content: space-between;
+    place-items: center;
+    padding: 20px;
+    width: auto;
+}
+
+.NavbarLogo{
+    width: 90px;
+    object-fit: contain;
+    height: auto;
+}

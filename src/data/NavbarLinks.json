@@ -1,0 +1,14 @@
+[
+    {
+        "title":"Location",
+        "link":"/location"
+    },
+    {
+        "title":"Event Date",
+        "link":"/eventdate"
+    },
+    {
+        "title":"Guest",
+        "link":"/guest"
+    }
+]
