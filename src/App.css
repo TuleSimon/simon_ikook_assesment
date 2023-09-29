@@ -1,10 +1,10 @@
-:root{
-  --text-color:#242423;
-  --text-color-light:#676664;
-  --primary-color:#FCC01C;
-  --primary-color_light:#FDEEC5;
+:root {
+  --text-color: #242423;
+  --border-color: #bfbfbf;
+  --text-color-light: #676664;
+  --primary-color: #fcc01c;
+  --primary-color_light: #fdeec5;
 }
-
 
 .App {
   text-align: center;
@@ -47,7 +47,6 @@
   }
 }
 
-
 .container {
   width: 100%;
   margin: 0 auto; /* Center the container horizontally */
@@ -88,60 +87,76 @@
   }
 }
 
-.flex{
+.flex {
   display: flex;
   place-content: center;
   place-items: center;
 }
 
-
-.rounded{
+.rounded {
   border-radius: 20px;
 }
 
-.body{ /* Start at normal size */
+.body {
+  /* Start at normal size */
   transition: all 0.5s ease;
 }
 
-.flex{
+
+.flex {
   display: flex;
 }
 
-.flex-col{
+.flex-col {
   flex-direction: column;
   place-items: start;
 }
 
-.mt-2{
+.mt-2 {
   margin-top: 30px;
 }
 
-h1{
+h1 {
   font-weight: 700;
   line-height: 0px;
   margin-bottom: 0px;
   text-align: start;
 }
 
-.textSmall{
+.textSmall {
   font-size: 16px;
+  display: flex;
+  gap: 3px;
+  place-content: center;
+  place-items: center;
   color: var(--text-color-light);
 }
 
-.gap-2{
-gap: 5px;
+hr{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #e4e1e17a;
+  width: 100%;
 }
 
-.gap-4{
-  gap: 10px;
-  }
+.gap-2 {
+  gap: 5px;
+}
 
-.colorPrimary{
+.gap-4 {
+  gap: 10px;
+}
+
+.gap-8 {
+  gap: 20px;
+}
+
+
+.colorPrimary {
   color: var(--primary-color);
 }
 
-
-.filledButtonLight{
+.filledButtonLight {
   background-color: var(--primary-color_light);
   display: flex;
   place-items: center;
@@ -152,12 +167,39 @@ gap: 5px;
   border-radius: 20px;
 }
 
-.between{
+.between {
   display: flex;
   flex-direction: row;
   place-content: space-between;
 }
 
-.w-full{
+.w-full {
   width: 100%;
+}
+
+.middleGrid {
+  display: grid;
+  width: 100%;
+  padding-bottom: 20px;
+  height: fit-content;
+  margin-top: 50px;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 80px;
+}
+
+.leftSection {
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  display: flex;
+  grid-column: span 2;
+  flex-direction: column;
+  box-shadow: -1px 10px 30px 0px rgba(0,0,0,0.1);
+}
+
+.rightSection {
+  grid-column: span 3;
+  overflow-x: hidden;
+  display: flex;
+  height: auto;
+  flex-direction: column;
 }

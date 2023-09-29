@@ -1,0 +1,22 @@
+.layout{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    padding: 0px;
+    margin: 0px;
+}
+
+.chef_image{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    aspect-ratio: 1 / 1;
+    border: 2px solid var(--primary-color);
+    object-fit: cover;
+}
+
+.checked{
+    bottom: 10px;
+    right: 0px;
+    position: absolute;
+}

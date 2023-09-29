@@ -1,9 +1,5 @@
 @import '../../App.css';
 
-:root{
-    --border-color:#BFBFBF;
-}
-
 .NavbarStyle{
     display: flex;
     flex-direction: row;

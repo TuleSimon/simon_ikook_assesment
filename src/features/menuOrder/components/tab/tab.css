@@ -1,0 +1,32 @@
+.tabButton {
+    height: 55px;
+    width: 50%;
+    z-index: 2;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    border-radius: 12px;
+    box-shadow: 4px 8px 14px rgba(0, 0, 0, 0.2);
+    border: 0px solid transparent;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+ .inactive {
+    background-color: var(--primary-color_light);
+    border-end-start-radius: 0px;
+    z-index: 0;
+    transform: translateX(-10px);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+    border-start-start-radius: 0px;
+}
+
+.inactive2 {
+    background-color: var(--primary-color_light);
+    border-end-end-radius: 0px;
+    z-index: 0;
+    transform: translateX(10px);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+    border-start-end-radius: 0px;
+}

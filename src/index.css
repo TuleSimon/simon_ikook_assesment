@@ -1,5 +1,10 @@
 body {
   margin: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  overflow-x: hidden;
+  min-height: 100vh;
+  height: fit-content;
   font-family:'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

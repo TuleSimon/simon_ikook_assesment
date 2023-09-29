@@ -1,19 +1,38 @@
-import { useState } from 'react'
+import { useEffect, useState } from "react";
+import dummyData from "../../../data/dummy_meals.json";
 
 function UseMenuOrderState() {
+  
+  const [shouldShowFullImage, setShowFullImage] = useState(null);
+  const [selectedMeals, selectAMeal] = useState([]);
 
-    const [shouldShowFullImage, setShowFullImage] = useState(null);
+  const showImage = (image) => {
+    setShowFullImage(image);
+  };
 
-    const showImage = (image) => {
-        console.log(image);
-        setShowFullImage(image);
-    }
+  useEffect(() => {
+    console.log(selectedMeals)
+  
+  }, [selectedMeals])
+  
 
+  const appendSelectedMeal = (index, selectedMealIndex) => {
+    console.log(`${index} ${selectedMealIndex}`)
+    selectAMeal((pre) => {
+     const array = [...pre];
+     array[index] = selectedMealIndex;
+     return array;
+    });
+
+  }
 
   return {
     shouldShowFullImage,
-    showImage
-  }
+    showImage,
+    dummyData,
+    selectedMeals,
+    appendSelectedMeal
+  };
 }
 
-export default UseMenuOrderState
+export default UseMenuOrderState;
