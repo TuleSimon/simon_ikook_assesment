@@ -6,6 +6,7 @@ import FilledButton from "../components/filledbutton/FilledButton";
 import ShareIcon from "../assets/icons/ShareIcon";
 import SaveIcon from "../assets/icons/SaveIcon";
 import RightSection from "../features/menuOrder/components/RightSection";
+import LeftSection from "../features/menuOrder/components/leftsection/LeftSection";
 
 function MenuOrderPage() {
   const {
@@ -51,23 +52,23 @@ function MenuOrderPage() {
         <ImageGrid onClick={(e) => showImage(e)} />
       </section>
 
-      <section className="middleGrid ">
-        <section className="rightSection">
-          {React.useMemo(
-            () => (
+      {React.useMemo(
+        () => (
+          <section className="middleGrid ">
+            <section className="rightSection">
               <RightSection
                 onSelected={(e, r) => appendSelectedMeal(e, r)}
                 selected={selectedMeals}
                 dummyData={dummyData}
               />
-            ),
-            [selectedMeals, dummyData, appendSelectedMeal]
-          )}
-        </section>
+            </section>
 
-        {/* Left */}
-        <section className="leftSection"></section>
-      </section>
+            {/* Left */}
+            <LeftSection dishes={selectedMeals} />
+          </section>
+        ),
+        [selectedMeals, dummyData, appendSelectedMeal]
+      )}
     </div>
   );
 }

@@ -8,8 +8,8 @@ import SelectableMenu from "./selectable_menu/SelectableMenu";
 function RightSection({ dummyData, onSelected,selected }) {
   return (
     <div className="rightSection">
-      <div className="between">
-        <div className="flex flex-col">
+      <div className="between w-full">
+        <div className="flex flex-col w-full">
           <h1> Chef Titilayo John</h1>
           <div className="flex gap-8">
             <p className="textSmall">
