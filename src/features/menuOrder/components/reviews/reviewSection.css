@@ -1,0 +1,80 @@
+
+.child{
+    background-color: var(--primary-color_light2);
+    border-radius: 14px;
+    text-align: start;
+    margin-top: 60px;
+    width: 100%;
+    padding: 40px;
+    padding-top: 60px;
+    gap: 20px;
+    padding-bottom: 60px;
+}
+
+.title{
+    margin: 0px;;
+    margin-top: 5px;
+}
+
+h1{
+    margin: 0px;
+}
+
+.start{
+    display: flex;
+    flex-direction: column;
+    place-items: flex-start;
+    place-content: center;
+}
+
+.averagesection{
+    background-color: white;
+    place-content: flex-start;
+    margin-top: 10px;
+    place-items: center;
+    border-radius: 18px;
+    width: 40%;
+    padding: 25px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    gap: 35px;
+    display: flex;
+    flex-direction: row;
+}
+
+.statssection{
+    background-color: white;
+    place-content: flex-start;
+    margin-top: 10px;
+    place-items: center;
+    border-radius: 18px;
+    width: 60%;
+    padding: 25px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.paren{
+    display: flex;
+    width: 100%;
+    gap: 50px;
+    flex-direction: row;
+}
+
+.reviewitem{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 4px;
+}
+
+.review_grid{
+    display: grid;
+    margin-top: 40px;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    gap:50px;
+}

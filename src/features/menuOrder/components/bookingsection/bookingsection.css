@@ -1,0 +1,47 @@
+.parent{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    gap: 50px;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.child{
+    background-color: var(--primary-color_light2);
+    border-radius: 14px;
+    text-align: start;
+    padding: 20px;
+    padding-top: 30px;
+}
+
+.small{
+    font-size: medium;
+    margin-top: 10px;
+}
+
+p{
+    font-size: small;
+}
+
+.gap-1{
+    gap: 16px;
+}
+.character{
+    display: flex;
+    place-content: center;
+    place-items: center;
+    gap:4px;
+    font-weight: 500;
+}
+
+a{
+    margin: 0px;
+    font-size: small;
+}
+
+.chefHeader{
+    gap: 25px;
+    display: flex;
+    flex-direction: row;
+    place-items: fflex-start;
+}

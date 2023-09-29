@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import dummyData from "../../../data/dummy_meals.json";
+import reviewData from "../../../data/reviews.json";
 
 function UseMenuOrderState() {
   
@@ -31,7 +32,8 @@ function UseMenuOrderState() {
     showImage,
     dummyData,
     selectedMeals,
-    appendSelectedMeal
+    appendSelectedMeal,
+    reviewData
   };
 }
 

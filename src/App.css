@@ -14,11 +14,21 @@ body{
 
 *{
   box-sizing: border-box;
+  color: var(--text-color);
+}
+
+.underline{
+  text-decoration: underline;
+}
+
+.mb-0{
+  margin-bottom: 0px;
 }
 
 .App {
   text-align: center;
   width: 100vw;
+  margin-bottom: 30px;
   overflow-x: hidden;
 }
 
@@ -142,6 +152,13 @@ h1 {
   color: var(--text-color-light);
 }
 
+.textMedium {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0px;
+  color: var(--text-color-light);
+}
+
 hr{
   margin-top: 20px;
   margin-bottom: 20px;
@@ -170,6 +187,7 @@ hr{
   background-color: var(--primary-color_light);
   display: flex;
   place-items: center;
+  cursor: pointer;
   gap: 8px;
   padding: 10px;
   padding-left: 15px;
@@ -182,10 +200,31 @@ hr{
   display: flex;
   place-content: center;
   place-items: center;
+  cursor: pointer;
   gap: 8px;
   padding: 15px;
   text-align: center;
   color: white;
+  border-radius: 10px;
+}
+
+svg{
+  cursor: pointer;
+}
+
+.filledButton3 {
+  background-color: white;
+  border: 1px solid var(--border-color);
+  display: flex;
+  cursor: pointer;
+  place-content: center;
+  place-items: center;
+  gap: 8px;
+  padding: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: var(--text-color);
   border-radius: 10px;
 }
 
@@ -244,4 +283,13 @@ li{
   display: flex;
   height: auto;
   flex-direction: column;
+}
+
+
+.m-0{
+  margin: 0px;
+}
+
+.p-0{
+  padding: 0px;
 }

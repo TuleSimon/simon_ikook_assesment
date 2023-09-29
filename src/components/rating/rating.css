@@ -1,0 +1,12 @@
+.center{
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    text-align: start;
+    place-content: flex-start;
+}
+
+
+.svgs{
+    fill: var(--primary-color);
+}

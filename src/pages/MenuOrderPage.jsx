@@ -7,6 +7,9 @@ import ShareIcon from "../assets/icons/ShareIcon";
 import SaveIcon from "../assets/icons/SaveIcon";
 import RightSection from "../features/menuOrder/components/RightSection";
 import LeftSection from "../features/menuOrder/components/leftsection/LeftSection";
+import BookingSection from "../features/menuOrder/components/bookingsection/BookingSection";
+import ReviewSection from "../features/menuOrder/components/reviews/ReviewSection";
+import Menu from "../features/menuOrder/menus/Menu";
 
 function MenuOrderPage() {
   const {
@@ -15,6 +18,7 @@ function MenuOrderPage() {
     dummyData,
     selectedMeals,
     appendSelectedMeal,
+    reviewData
   } = UseMenuOrderState();
 
   return (
@@ -69,6 +73,13 @@ function MenuOrderPage() {
         ),
         [selectedMeals, dummyData, appendSelectedMeal]
       )}
+
+
+
+      <BookingSection/>
+      <ReviewSection reviews={reviewData}/>
+      <Menu/>
+
     </div>
   );
 }
