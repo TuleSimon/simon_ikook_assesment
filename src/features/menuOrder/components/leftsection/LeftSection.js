@@ -8,7 +8,8 @@ function LeftSection({ dishes }) {
   const [progress, setProgress] = useState(0);
 
   function getProgress() {
-    const nonNullCount = dishes.filter((item) => item !== null).length;
+    const nonNullCount = dishes.filter((item) => item !== null && item!==undefined).length;
+    console.log(nonNullCount);
     const arrayLength = dishes.length;
 
     if (arrayLength === 0) {

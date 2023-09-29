@@ -10,6 +10,7 @@ import LeftSection from "../features/menuOrder/components/leftsection/LeftSectio
 import BookingSection from "../features/menuOrder/components/bookingsection/BookingSection";
 import ReviewSection from "../features/menuOrder/components/reviews/ReviewSection";
 import Menu from "../features/menuOrder/menus/Menu";
+import SimiliarMenu from "../features/menuOrder/menus/SimilarMenu";
 
 function MenuOrderPage() {
   const {
@@ -79,6 +80,7 @@ function MenuOrderPage() {
       <BookingSection/>
       <ReviewSection reviews={reviewData}/>
       <Menu/>
+      <SimiliarMenu/>
 
     </div>
   );

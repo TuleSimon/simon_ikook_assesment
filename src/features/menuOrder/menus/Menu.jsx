@@ -1,6 +1,7 @@
 import React from 'react'
 import './menu.css'
 import MenuItem from './MenuItem'
+import FilledButton3 from '../../../components/filledbutton/FilledButton3'
 
 function Menu() {
   return (
@@ -15,6 +16,8 @@ function Menu() {
     <MenuItem image="/food7.jpg"/>
 
     </div>
+
+    <FilledButton3>View all menus (10)</FilledButton3>
       
     </div>
   )
